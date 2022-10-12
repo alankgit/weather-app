@@ -1,4 +1,3 @@
-console.log("Hey Lol")
 
 fetch("http://puzzle.mead.io/puzzle").then((response)=>{
 
