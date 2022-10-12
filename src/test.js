@@ -72,6 +72,7 @@ const geocode = require("./utils/geocode")
 
 
 const app = express()
+const port = process.env.PORT || 3000
 
 
 const template = path.join(__dirname,"../template/views")
@@ -168,8 +169,8 @@ app.get("*",(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("nice")
+app.listen(port,()=>{
+    console.log("nice" + port)
 })
 
 
